@@ -48,6 +48,7 @@ public class App
 		productRepository = (ProductRepository) context.getBean("productRepository");
 		System.out.println(productRepository);
 
+		//if we specify prototype in beans xml then 
 		productRepository = (ProductRepository) context.getBean("productRepository");
 		System.out.println(productRepository);
 
