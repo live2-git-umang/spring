@@ -4,13 +4,22 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<!-- define the Oracle Repository spring beans -->
+	<!-- beans are singleton by default -->
 	<!-- ProductRepository productRepository = new OracleRepository(); -->
 	<!-- ProductRepository productRepository = new MySqlRepository(); -->
 
-	<bean id="productRepository"
-	class = "com.live.repositories.OracleRepository"/>
-	
-		<bean id="productRepository1"
-	class = "com.live.repositories.MySqlRepository"/>
+	<!-- defining the scope as prototype so as its no more singleton -->
+	<bean id="productRepository" scope="prototype"
+		class="com.live.repositories.OracleRepository" />
+
+	<!-- <bean id="productRepository" -->
+	<!-- class="com.live.repositories.OracleRepository" /> -->
+
+	<bean id="mySqlRepository" scope="prototype"
+		class="com.live.repositories.MySqlRepository" />
+		
+	<!-- <bean id="mySqlRepository" -->
+	<!-- class="com.live.repositories.MySqlRepository" /> -->
+
 
 </beans>
