@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- define the Oracle Repository spring beans -->
+	<!-- beans are singleton by default -->
+	<!-- ProductRepository productRepository = new OracleRepository(); -->
+	<!-- ProductRepository productRepository = new MySqlRepository(); -->
+
+	<!-- defining the scope as prototype so as its no more singleton -->
+
+	<bean id="productRepository"
+		class="com.live.repositories.OracleRepository" />
+
+
+	<bean id="productService"
+		class="com.live.service.ProductServiceImpl">
+		<property name = "productRepository" ref="productRepository" />
+
+	</bean>
+
+</beans>
