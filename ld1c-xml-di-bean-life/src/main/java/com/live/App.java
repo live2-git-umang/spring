@@ -16,8 +16,7 @@ public class App
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		ProductService productService = context.getBean("productService",ProductService.class);
 		productService.getProducts().forEach(System.out::println);
-		System.out.println(productService.getDomainName());
-		System.out.println(productService.getLocation());
+		
 		
 		context.close();
 	}
