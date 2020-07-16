@@ -16,7 +16,7 @@ public class OracleRepository implements ProductRepository {
 	}
 	
 	public void destroy() {
-		System.out.println("Destrucion of Bean");
+		System.out.println("Destruction of Bean");
 	}
 	
 	@Override
