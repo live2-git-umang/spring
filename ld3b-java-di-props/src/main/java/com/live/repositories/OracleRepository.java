@@ -24,7 +24,7 @@ public class OracleRepository implements ProductRepository {
 		Product product = new Product();
 		
 		product.setProductId("P01");
-		product.setProductId("Oracle");
+		product.setProductName("Oracle");
 		
 		products.add(product);
 		
