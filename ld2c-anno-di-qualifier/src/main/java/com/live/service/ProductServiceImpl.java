@@ -45,16 +45,7 @@ public class ProductServiceImpl implements ProductService {
 		this.productRepository = productRepository;
 		this.productRepository2 = productRepository2;
 	}
-	
-	/*
-	 * { System.out.println("Generic");
-	 * 
-	 * }
-	 * 
-	 * static { //this is executed first System.out.println("Static ");
-	 * 
-	 * }
-	 */
+
 
 	@Override
 	public List<Product> getProducts1() {
