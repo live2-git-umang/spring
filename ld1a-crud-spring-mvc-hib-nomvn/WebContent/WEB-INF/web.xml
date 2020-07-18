@@ -16,12 +16,24 @@
 		<name>spring_web</name>
 	</absolute-ordering>
 
+	<!-- Servlet Configuration -->
+	<servlet>
+		<servlet-name>sales-module-servlet</servlet-name>
+		<servlet-class>org.springframework.web.SalesModuleServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>sales-module-servlet</servlet-name>
+		<url-pattern>/sales/sales-servlet</url-pattern>
+	</servlet-mapping>
+
+
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>/WEB-INF/spring-beans-servlet.xml</param-value>
+			<param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
 		</init-param>
 	</servlet>
 

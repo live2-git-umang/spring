@@ -1,5 +1,8 @@
 package com.live.controller;
 
-public class ProductController {
+import org.springframework.stereotype.Controller;
 
+@Controller
+public class ProductController {
+	
 }
