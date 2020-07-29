@@ -13,23 +13,13 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 
-<!-- Servlet Configuration -->
-<!-- <servlet>
-		<servlet-name>sales-module-servlet</servlet-name>
-		<servlet-class>com.live.web.SalesModuleServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>sales-module-servlet</servlet-name>
-		<url-pattern>/sales/sales-servlet</url-pattern>
-	</servlet-mapping>
-		<servlet>
-		<servlet-name>product-module-servlet</servlet-name>
-		<servlet-class>com.live.web.ProductModuleServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>sales-module-servlet</servlet-name>
-		<url-pattern>/sales/sales-servlet</url-pattern>
-	</servlet-mapping> -->
+	<!-- Servlet Configuration -->
+	<!-- <servlet> <servlet-name>sales-module-servlet</servlet-name> <servlet-class>com.live.web.SalesModuleServlet</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>sales-module-servlet</servlet-name> 
+		<url-pattern>/sales/sales-servlet</url-pattern> </servlet-mapping> <servlet> 
+		<servlet-name>product-module-servlet</servlet-name> <servlet-class>com.live.web.ProductModuleServlet</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>sales-module-servlet</servlet-name> 
+		<url-pattern>/sales/sales-servlet</url-pattern> </servlet-mapping> -->
 
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
@@ -43,7 +33,7 @@
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	
+
 	<absolute-ordering>
 		<name>spring_web</name>
 	</absolute-ordering>

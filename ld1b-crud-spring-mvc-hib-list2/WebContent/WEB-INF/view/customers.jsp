@@ -10,13 +10,13 @@
 	<h1>The List of Customer</h1>
 
 	<c:forEach var="customerObject" items="${customerModelFromController}">
-	${customerObject.firstName } <br/>
-	${customerObject.lastName } <br/>
-	${customerObject.email } <br/>
-	<hr/>
+	${customerObject.firstName } <br />
+	${customerObject.lastName } <br />
+	${customerObject.email } <br />
+		<hr />
 	</c:forEach>
-	
-	
+
+
 	<!-- scriptlets allow writing java code inside jsp -->
 	<%-- 	 List of Customers
 	<%
